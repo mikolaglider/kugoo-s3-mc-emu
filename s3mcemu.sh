@@ -1,0 +1,6 @@
+#!/bin/bash
+stty 9600 -F $1;
+while :
+do
+	echo -en "\x3C\x07\x01\x00\x02\x00\x44\x00\x00\x00\x4E" > $1
+done
